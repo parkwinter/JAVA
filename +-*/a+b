@@ -1,11 +1,13 @@
-import java.util.Scanner;
+import java.util.Scanner; // ctr+shift+o (이클립스에서)
 
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        sc.close();
+        sc.close(); //닫아주는게 좋음
         System.out.println(a + b);
     }
 }
+
+//백준 1000
