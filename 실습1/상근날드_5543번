@@ -1,0 +1,37 @@
+package study;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int [] burger = new int[3];
+		for(int l =0; l<3; l++) {
+			burger[l]=sc.nextInt();
+		}
+		int cola = sc.nextInt();
+		int cider = sc.nextInt();
+		int smallestB, sD = 0;
+		smallestB = burger[0];
+		sD = cola;
+		
+		for(int i=0; i<3; i++) {
+			if(smallestB > burger[i]) {
+				smallestB = burger[i];
+			}
+		}
+		
+		if(sD>cider) {
+			sD = cider;
+		}
+		
+		int setprice = 0;
+		setprice = smallestB + sD -50;
+		
+		System.out.println(setprice);
+	}
+
+}
